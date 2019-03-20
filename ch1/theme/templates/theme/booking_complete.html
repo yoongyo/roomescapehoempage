@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<div class="container-fluid py-5" style="background-color:black">
+<!-- PC 버전 -->
+<div class="d-none d-sm-block container-fluid py-5" style="background-color:black">
     <h1 class="text-center text-white">BOOKING</h1>
     <h4 class="text-center pb-4" style="color:rgb(171,171,171);">예약 완료</h4>
     <div class="container">
@@ -35,6 +35,33 @@
                 <div class="col-2"></div>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- 모바일 버전 -->
+<div class="d-block d-sm-none container-fluid py-3" style="background-color:black">
+    <h4 class="text-center text-white">BOOKING</h4>
+    <h5 class="text-center pb-4" style="color:rgb(171,171,171);">예약 완료</h5>
+    <div class="row my-2">
+        <div class="col-4">
+            <h6 class="text-white text-center"><span style="color:rgb(232,102,52);">1</span>. 날짜/룸 선택</h6>
+        </div>
+        <div class="col-4">
+            <h6 class=" text-white text-center"><span style="color:rgb(232,102,52);">2</span>. 정보입력</h6>
+        </div>
+        <div class="col-4">
+            <h6 class="pb-3 text-center text-white" style="border-bottom:3px solid white"><span style="color:rgb(232,102,52);">3</span>. 예약 완료</h6>
+        </div>
+    </div>
+    <div class="row my-2 py-2">
+        <div class="col-1"></div>
+        <div class="text-center col-10 py-3 my-4" style="border:3px solid white;">
+            <div class="py-4">
+                <h5 class="text-center text-white">신청하신 테마방 예약이 완료되었습니다.</h5>
+                <h5 class="text-center text-white">[ 예약 완료 ]</h5>
+            </div>
+        </div>
+        <div class="col-1"></div>
     </div>
 </div>
 
